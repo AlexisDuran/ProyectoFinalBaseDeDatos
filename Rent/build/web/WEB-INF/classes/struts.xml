@@ -1,0 +1,83 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+
+    <package name="default" extends="struts-default">
+
+        <action name="registrar" class="operaciones.Service" method="execute">
+            <result name="success">/JSP/Clientes.jsp</result>
+        </action>
+        <action name="Consultar" class="operaciones.Service" method="consulta">
+            <result name="success">/JSP/Clientes.jsp</result>
+        </action>
+        <action name="buscarCliente" class="operaciones.Service" method="buscarCliente">
+            <result name="success">/JSP/Clientes.jsp</result>
+        </action>
+        <action name="actualizarCliente" class="operaciones.Service" method="actualizarCliente">
+            <result name="success">/JSP/Clientes.jsp</result>
+        </action>
+        <action name="eliminarCliente" class="operaciones.Service" method="eliminarCliente">
+            <result name="success">/JSP/Clientes.jsp</result>
+        </action>
+
+
+        <action name="registrarLap" class="operaciones.Service" method="executeLap">
+            <result name="success">/JSP/laptops.jsp</result>
+        </action>
+        <action name="ConsultaLap" class="operaciones.Service" method="consultaLap">
+            <result name="success">/JSP/laptops.jsp</result>
+        </action>
+        <action name="buscarCaracteristica" class="operaciones.Service" method="buscarCaracteristica">
+            <result name="success">/JSP/laptops.jsp</result>
+        </action>
+        <action name="actualizarCaracteristica" class="operaciones.Service" method="actualizarCaracteristica">
+            <result name="success">/JSP/laptops.jsp</result>
+        </action>
+        <action name="eliminarCaracteristica" class="operaciones.Service" method="eliminarCaracteristica">
+            <result name="success">/JSP/laptops.jsp</result>
+        </action>
+
+
+
+        <action name="registrarVenta" class="operaciones.Service" method="executeVenta">
+            <result name="success">/JSP/ventas.jsp</result>
+        </action>
+        <action name="consultaVenta" class="operaciones.Service" method="consultaVenta">
+            <result name="success">/JSP/ventas.jsp</result>
+        </action>
+        <action name="buscarVenta" class="operaciones.Service" method="buscarVenta">
+            <result name="success">/JSP/ventas.jsp</result>
+        </action>
+        <action name="actualizarVenta" class="operaciones.Service" method="actualizarVenta">
+            <result name="success">/JSP/ventas.jsp</result>
+        </action>
+        <action name="eliminarVenta" class="operaciones.Service" method="eliminarVenta">
+            <result name="success">/JSP/ventas.jsp</result>
+        </action>
+
+
+
+
+
+        <action name="registrarRenter" class="operaciones.Service" method="executeRenter">
+            <result name="success">/JSP/renter.jsp</result>
+        </action>
+        <action name="consultaRenter" class="operaciones.Service" method="consultaRenter">
+            <result name="success">/JSP/renter.jsp</result>
+        </action>
+        <action name="buscarRenter" class="operaciones.Service" method="buscarRenter">
+            <result name="success">/JSP/renter.jsp</result>
+        </action>
+        <action name="actualizarRenter" class="operaciones.Service" method="actualizarRenter">
+            <result name="success">/JSP/renter.jsp</result>
+        </action>
+        <action name="eliminarRenter" class="operaciones.Service" method="eliminarRenter">
+            <result name="success">/JSP/renter.jsp</result>
+        </action>
+        
+
+
+    </package>
+
+</struts>
